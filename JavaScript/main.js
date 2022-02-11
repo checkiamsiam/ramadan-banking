@@ -62,3 +62,17 @@ withdrawButton.addEventListener('click', function () {
   } */
   commonThing(withdrawField , withdrawAmount , false);
 })
+
+
+
+//random rgba color generator
+
+function rgbaGenerator(){
+  var red = parseInt(Math.random()*250);
+  var green = parseInt(Math.random()*250);
+  var blue = parseInt(Math.random()*250);
+  return `rgba(${red}, ${green} , ${blue})`;
+}
+document.body.addEventListener('dblclick' , function(){
+  document.body.style.backgroundColor = rgbaGenerator();
+})

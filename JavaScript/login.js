@@ -10,3 +10,14 @@ button.addEventListener('click', function(){
     alert('The email or password you entered is not valid. please give valid value to redirect or login you account!');
   }
 })
+
+//random rgba color generator
+function rgbaGenerator(){
+  var red = parseInt(Math.random()*250);
+  var green = parseInt(Math.random()*250);
+  var blue = parseInt(Math.random()*250);
+  return `rgba(${red}, ${green} , ${blue})`;
+}
+document.body.addEventListener('dblclick' , function(){
+  document.body.style.backgroundColor = rgbaGenerator();
+})

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Ramadan Banking Ltd.</title>
+  <link rel="shortcut icon" href="../img/moon.png" type="image/x-icon">
+    
+</head>
+<body class="bg-slate-700">
+  <header><h1 class="font-semibold text-center mt-6 sm:text-6xl text-4xl text-white">Welcome to your <span class="text-fuchsia-600">Online Wallet</span>	&#128511;</h1></header>
+  <main>
+    <section>
+      <div  class="grid md:grid-cols-3 gap-8 w-10/12 mx-auto my-12 ">
+        <div class="bg-orange-400 p-8 rounded">
+          <h1 class="text-3xl">Deposit</h1>
+          <h1 class="text-6xl">$<span class="text-5xl" id="deposit-amount">0</span></h1>
+        </div>
+        <div class="bg-blue-400 p-8 rounded scale-125 mx-4">
+          <h1 class="text-3xl">Balance</h1>
+          <h1 class="text-6xl">$<span class="text-5xl" id="balance-amount">1200</span></h1>
+        </div>
+        <div class="bg-red-400 p-8 rounded">
+          <h1 class="text-3xl">Withdraw</h1>
+          <h1 class="text-6xl">$<span class="text-5xl" id="withdraw-amount">0</span></h1>
+        </div> 
+      </div>
+      <div  class="grid md:grid-cols-2 gap-4 w-10/12 mx-auto my-12 ">
+        <div class="bg-pink-100 p-10 rounded">
+          <h1 class="font-bold text-3xl mb-5">Deposit amount</h1>
+          <input id="deposit-field" class="block w-full p-2 rounded  focus:outline-none focus:border-pink-500 focus:ring-2 focus:ring-pink-500" type="text" placeholder="$ Enter deposit amount" > 
+          <button id="deposit-button" class="p-2 bg-pink-700 rounded w-full my-5 text-white">Deposit</button>
+        </div>
+        <div class="bg-sky-100 p-10 rounded">
+          <h1 class="font-bold text-3xl mb-5">Withdraw amount</h1>
+          <input id="withdraw-field" class="block w-full p-2 rounded  focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500" type="text" placeholder="$ Enter Withdraw amount">
+          <button id="withdraw-button" class="p-2 bg-sky-700 rounded w-full my-5 text-white">Withdraw</button>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+  <script src="../JavaScript/main.js"></script>
+</body>
+</html>

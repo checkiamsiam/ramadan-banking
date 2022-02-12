@@ -32,11 +32,11 @@ function commonThing(field , amount , addIt ){
   if(addIt == false){
     balanceAmount.innerText = Number(balanceAmount.innerText)-Number(field.value);
   }
-  field.value = '';
-  if (balanceAmount.innerText == 'NaN' ) {
-    alert('You enterd a wrong value !!! please set a valid value to deposit money in your account');
+  if (balanceAmount.innerText == 'NaN' || field.value < 0 ) {
+    alert('You entered a wrong value !!! please set a valid value to deposit money in your account');
     location.reload();
   }
+  field.value = '';
 }
 
 //deposit section 
